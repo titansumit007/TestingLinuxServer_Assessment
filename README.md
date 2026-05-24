@@ -1,8 +1,7 @@
 # TestingLinuxServer_Assessment
 Testing, Linux and Server Assessment for Submission. Answers to all questions. Screen shots are attached in readme file.
 
-
-
+#Link to locate on Git: https://github.com/titansumit007/TestingLinuxServer_Assessment.git
 
 
 
