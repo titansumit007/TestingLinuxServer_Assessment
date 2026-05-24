@@ -21,6 +21,10 @@ LAPTOP-6Q9E9RN9:/# tree /home/ec2-user/webapp
 ├── logs
 └── scripts
 
+<img width="1917" height="912" alt="SS1" src="https://github.com/user-attachments/assets/cbf9044d-c5b9-47e9-8314-0594e9a52feb" />
+
+
+
 3 directories, 0 files
 LAPTOP-6Q9E9RN9:/# cd /home/ec2-user/webapp
 LAPTOP-6Q9E9RN9:/home/ec2-user/webapp# cd config
@@ -44,6 +48,8 @@ LAPTOP-6Q9E9RN9:/home/ec2-user/webapp/logs# ls -l
 total 0
 -rw-r--r--    1 root     root             0 May 24 00:30 app.log
 LAPTOP-6Q9E9RN9:/home/ec2-user/webapp/logs# cd ..
+
+<img width="1917" height="977" alt="SS2" src="https://github.com/user-attachments/assets/260bdb71-03d4-4f31-a9ed-0a090ca65ce2" />
 
 #Adding permissions:
 
@@ -73,6 +79,8 @@ total 0
 
 /home/ec2-user/webapp/scripts:
 total 0
+
+<img width="1918" height="1017" alt="SS3" src="https://github.com/user-attachments/assets/4809d833-684f-4293-9094-190081996fdd" />
 
 #Creating Script...
 
@@ -116,6 +124,9 @@ Login: Sumit Date: Sun May 24 01:10:51 UTC 2026
 Login: Shraddha Date: Sun May 24 01:11:15 UTC 2026
 Login: Shreyna Date: Sun May 24 01:11:51 UTC 2026
 
+<img width="1918" height="947" alt="image" src="https://github.com/user-attachments/assets/09da7601-ec7a-4224-aa26-31ab467276c1" />
+
+
 #verifying structure:
 
 LAPTOP-6Q9E9RN9:/home/ec2-user/webapp/scripts# ls -lR /home/ec2-user/webapp/
@@ -139,6 +150,9 @@ total 1
 
 LAPTOP-6Q9E9RN9:/home/ec2-user/webapp/scripts#
 LAPTOP-6Q9E9RN9:/home/ec2-user/webapp/scripts#
+
+
+
 
 #Adding group Writers:
 
@@ -174,6 +188,11 @@ LAPTOP-6Q9E9RN9:/home# #Change group ownership of the script
 LAPTOP-6Q9E9RN9:/home#
 LAPTOP-6Q9E9RN9:/home# chown root:writers /home/ec2-user/webapp/scripts/log_user.sh
 LAPTOP-6Q9E9RN9:/home#
+
+
+<img width="1908" height="998" alt="image" src="https://github.com/user-attachments/assets/7715f2b7-889b-4493-925c-e123649473ed" />
+
+
 LAPTOP-6Q9E9RN9:/home# #Set permissions to 664
 LAPTOP-6Q9E9RN9:/home#
 LAPTOP-6Q9E9RN9:/home# chmod 664 /home/ec2-user/webapp/scripts/log_user.sh
@@ -215,6 +234,10 @@ LAPTOP-6Q9E9RN9:~$ echo 'test from devuser3' >> /home/ec2-user/webapp/scripts/lo
 LAPTOP-6Q9E9RN9:~$ #write attempt:Denied......
 LAPTOP-6Q9E9RN9:~$
 LAPTOP-6Q9E9RN9:~$ exit
+
+<img width="1915" height="993" alt="image" src="https://github.com/user-attachments/assets/37337f74-ca4a-4c72-937b-071d57429d86" />
+
+
 LAPTOP-6Q9E9RN9:/home# su - devuser4
 LAPTOP-6Q9E9RN9:~$ cat /home/ec2-user/webapp/scripts/log_user.sh
 #!/bin/bash
@@ -236,5 +259,9 @@ LAPTOP-6Q9E9RN9:~$
 LAPTOP-6Q9E9RN9:~$
 LAPTOP-6Q9E9RN9:~$ exit
 LAPTOP-6Q9E9RN9:/home# ls -l /home/ec2-user/webapp/scripts/log_user.sh
+
+<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/91c36a18-9922-45a0-bdf2-91c30cf086fd" />
+
+
 -rw-rw-r--    1 root     writers        248 May 24 01:28 /home/ec2-user/webapp/scripts/log_user.sh
 LAPTOP-6Q9E9RN9:/home#
